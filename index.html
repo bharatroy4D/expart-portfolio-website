@@ -24,8 +24,8 @@
     <header>
         <!-- nav section -->
         <div class="navbar py-4 bg-[#202124] opacity-95 shadow-sm fixed z-20 top-0">
-            <div class="w-11/12 mx-auto">
-                <div id="portfolio" class="flex-1 px-8 ">
+            <div class="w-[90%] mx-auto">
+                <div id="portfolio" class="flex-1  ">
                     <h1 class="text-3xl text-white  font-bold"><a href="#portfolio">Portfolio</a></h1>
                 </div>
                 <div class="items-center gap-6 hidden md:inline-flex">
@@ -53,7 +53,7 @@
                         </li>
                     </ul>
                     <button
-                        class=" py-[9px] px-6 border bg-[#394E6A] rounded-lg text-white border-gray-400 hover:text-white hover:bg-red-500   font-semibold shadow-2xl">Hire
+                        class=" py-[9px] px-6 border bg-[#394E6A] rounded-lg text-white border-gray-400 hover:text-white hover:bg-red-500 font-semibold shadow-2xl">Hire
                         Me</button>
 
                 </div>
@@ -114,7 +114,7 @@
             <div class="hero w-[90%] mx-auto  min-h-screen">
                 <div class="hero-content flex-col gap-20 lg:flex-row ">
                     <img src="images/icon/about-removebg-preview.png"
-                        class=" max-w-64 md:max-w-sm lg:max-w-2xl  shadow-md bg-[#202124] rounded-full " />
+                        class=" max-w-64  lg:max-w-2xl  shadow-md bg-[#202124] rounded-full " />
                     <div>
                         <h4 class="text-[#F9004D] ">Visit My Portfolio</h4>
                         <h1 class="text-4xl md:text-5xl font-bold text-[#F9004D]">About Me</h1>
@@ -137,8 +137,8 @@
             </div>
         </section>
         <!-- my skill -->
-        <section id="skill" class="bg-base-200" >
-            <div class="w-[90%] mx-auto py-12">
+        <section id="skill" class="bg-base-200">
+            <div class="w-[90%] mx-auto ">
                 <h3 class=" text-[#F9004D] py-3 text-start">Visit MY skill</h3>
                 <h1 class=" text-4xl md:text-5xl font-bold text-start text-[#F9004D] pb-3">My Skill</h1>
                 <div class="py-6">
@@ -195,9 +195,9 @@
                 </div>
             </div>
         </section>
-        <!-- what do section -->
+        <!-- service section -->
         <section id="services" class="bg-base-200">
-            <div class="w-[90%] mx-auto pb-12">
+            <div class="w-[90%] mx-auto py-12">
                 <h3 class="text-xl text-[#F9004D] py-3 ">Feature</h3>
                 <h1 class=" text-4xl md:text-5xl font-bold  text-[#F9004D]">My Services</h1>
 
@@ -250,35 +250,51 @@
             </div>
         </section>
         <!-- contact section -->
-        <section id="contact" class="bg-base-200">
-            <div class="hero  min-h-screen w-[90%] mx-auto">
-                <div class="hero-content flex-col lg:flex-row">
-                    <div class="text-center lg:text-left">
-                        <h1 class="text-5xl font-bold">Login now!</h1>
-                        <p class="py-6">
-                            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                            quasi. In deleniti eaque aut repudiandae et a id nisi.
-                        </p>
+        <section id="contact" class="bg-base-200 ">
+            <div class="  w-[90%] mx-auto border-t border-red-400 py-14">
+                <div class="hero-content flex-col justify-between md:flex-row lg:flex-row">
+                    <div class=" lg:text-left">
+                        <h1 class="text-4xl font-bold pb-8">Contact Me</h1>
+                        <div class="flex flex-col gap-5">
+                            <!-- phone -->
+                            <p class="py-6 flex items-center gap-2 bg-white shadow-xl p-5 rounded-md">
+                                <img src="images/icon/phone-call.png" alt="" class="w-8">
+                                <span class="text-base font-bold">+8801714414775</span>
+                            </p>
+                            <!-- gmail-->
+                            <p class="py-6 flex items-center gap-2 bg-white shadow-xl p-5 rounded-md">
+                                <img src="images/icon/gmail.png" alt="" class="w-8">
+                                <span class="text-base font-bold">bharartoy1005@gamil.com</span>
+                            </p>
+                            <!-- map -->
+                            <p class="py-6 flex items-center gap-2 bg-white shadow-xl p-5 rounded-md">
+                                <img src="images/icon/gps.png" alt="" class="w-8">
+                                <span class="text-base font-bold">Rangpur, Dhaka (Bangladesh)</span>
+                            </p>
+                        </div>
                     </div>
-                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div class="card bg-base-100 w-full max-w-sm md:max-w-xl shrink-0 shadow-2xl">
                         <form class="card-body">
+                            <!-- name -->
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text text-base">Name</span>
+                                </label>
+                                <input type="name" placeholder="Enter your name" class="input input-bordered" required />
+                            </div>
+                            <!-- email -->
                             <div class="form-control">
                                 <label class="label">
                                     <span class="label-text">Email</span>
                                 </label>
-                                <input type="email" placeholder="email" class="input input-bordered" required />
+                                <input type="email" placeholder="Enter your email" class="input input-bordered" required />
                             </div>
-                            <div class="form-control">
-                                <label class="label">
-                                    <span class="label-text">Password</span>
-                                </label>
-                                <input type="password" placeholder="password" class="input input-bordered" required />
-                                <label class="label">
-                                    <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
-                                </label>
+                            <!-- massage -->
+                            <div class="form-control py-5">
+                                <textarea name="massage" id="" class="input input-bordered p-3 rounded-md h-32">Massages</textarea>
                             </div>
-                            <div class="form-control mt-6">
-                                <button class="btn btn-primary">Login</button>
+                            <div>
+                                <input type="submit" class="text-base py-2 px-6  bg-[#394E6A] rounded-lg text-white border-gray-400 hover:text-white hover:bg-red-500 font-semibold shadow-2xl">
                             </div>
                         </form>
                     </div>
