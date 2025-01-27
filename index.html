@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <!-- daisy and tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/icon/bharat roy.png" type="image/x-icon">
 
     <style>
         .font-sans {
@@ -22,25 +23,29 @@
 <body class="font-sans">
     <header>
         <!-- nav section -->
-        <div class="navbar py-4 bg-[#202124] opacity-90 shadow-sm fixed z-20 top-0">
+        <div class="navbar py-4 bg-[#202124] opacity-95 shadow-sm fixed z-20 top-0">
             <div class="w-11/12 mx-auto">
                 <div id="portfolio" class="flex-1 px-8 ">
                     <h1 class="text-3xl text-white  font-bold"><a href="#portfolio">Portfolio</a></h1>
                 </div>
                 <div class="items-center gap-6 hidden md:inline-flex">
                     <ul
-                        class="flex  px-1 text-lg text-white  font-semibold hover:text-gray-700 justify-center items-center gap-5">
+                        class="flex  px-1 text-lg text-white  font-semibold hover:text-gray-700 justify-center items-center gap-4 ">
 
-                        <li class="hover:bg-[#394E6A] py-2 px-3 rounded-md hover:text-white"><a href="#home ">Home</a>
+                        <li class="hover:bg-[#394E6A] py-2 px-3  rounded-md hover:text-white"><a href="#home ">Home</a>
                         </li>
 
-                        <li class="hover:bg-[#394E6A] py-2 px-3 rounded-md hover:text-white"><a href="#about">About</a>
+                        <li class="hover:bg-[#394E6A] py-2 px-3  rounded-md hover:text-white"><a href="#about">About</a>
                         </li>
 
-                        <li class="hover:bg-[#394E6A] py-2 px-3 rounded-md hover:text-white"><a href="#skill">skill</a>
+                        <li class="hover:bg-[#394E6A] py-2 px-3  rounded-md hover:text-white"><a href="#skill">Skills</a>
                         </li>
 
-                        <li class="hover:bg-[#394E6A] py-2 px-3 rounded-md hover:text-white"><a href="Resume"></a>Resume
+                        <li class="hover:bg-[#394E6A] py-2 px-3  rounded-md hover:text-white"><a href="#services">Services</a>
+                        </li>
+                        <li class="hover:bg-[#394E6A] py-2 px-3  rounded-md hover:text-white"><a href="#projects">Projects</a>
+                        </li>
+                        <li class="hover:bg-[#394E6A] py-2 px-3  rounded-md hover:text-white"><a href="#contact">Contact</a>
                         </li>
                     </ul>
                     <button
@@ -102,7 +107,7 @@
         <section id="about" class="bg-base-200 py-12">
             <div class="hero w-[90%] mx-auto  min-h-screen">
                 <div class="hero-content flex-col gap-20 lg:flex-row ">
-                    <img src="images/icon/about-removebg-preview.png" class="  shadow-2xl bg-[#202124] " />
+                    <img src="images/icon/about-removebg-preview.png" class=" max-w-sm md:max-w-md  shadow-md bg-[#202124] rounded-full " />
                     <div>
                         <h4 class="text-[#F9004D] ">Visit My Portfolio</h4>
                         <h1 class="text-5xl font-bold text-[#F9004D]">About Me</h1>
@@ -115,7 +120,7 @@
                         </p>
                         <p class="text-black">I thrive on solving complex problems and turning ideas into digital
                             experiences that make an impact. Whether it's collaborating with a team or tackling solo
-                            projects, I approach every task with curiosity, enthusiasm, and a commitment to excellence.
+                            projects
                         </p>
 
                         <button class="btn bg-[#394E6A] py-3 px-6 hover:bg-red-500 mt-4 shadow-2xl text-white">Contact
@@ -129,44 +134,52 @@
             <h3 class=" text-[#F9004D] py-3 text-center md:text-start">Visit MY skill</h3>
             <h1 class="text-5xl font-bold text-center md:text-start text-[#F9004D] pb-3">MY Skill</h1>
             <div class="py-6">
-                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     <!-- card-1 -->
-                    <div class="bg-gray-100 shadow-2xl flex flex-col items-center justify-center rounded-xl">
-                        <img src="images/icon/html.png" alt="" class=" h-32 px-14 py-5">
+                    <div
+                        class="bg-gray-100 shadow-2xl flex flex-col items-center justify-center rounded-xl hover:transform hover:rotate-6">
+                        <img src="images/icon/html.png" alt="" class=" h-32 px-14 py-5 ">
                         <h4 class="text-2xl pb-3 font-medium text-center">HTML</h4>
                     </div>
                     <!-- card-2 -->
-                    <div class="bg-gray-100 shadow-2xl flex flex-col items-center justify-center rounded-xl">
+                    <div
+                        class="bg-gray-100 shadow-2xl flex flex-col items-center justify-center rounded-xl hover:transform hover:rotate-6">
                         <img src="images/icon/css-3.png" alt="" class=" h-32 px-14 py-5">
                         <h4 class="text-2xl pb-3 font-medium text-center">CSS</h4>
                     </div>
                     <!-- card-3 -->
-                    <div class="bg-gray-100 shadow-2xl flex flex-col items-center justify-center rounded-xl">
+                    <div
+                        class="bg-gray-100 shadow-2xl flex flex-col items-center justify-center rounded-xl hover:transform hover:rotate-6">
                         <img src="images/icon/tailwind-removebg-preview.png" alt="" class=" h-32 px-14 py-5">
                         <h4 class="text-2xl pb-3 font-medium text-center">Tailwind</h4>
                     </div>
                     <!-- card-4 -->
-                    <div class="bg-gray-100 shadow-2xl flex flex-col items-center justify-center rounded-xl">
+                    <div
+                        class="bg-gray-100 shadow-2xl flex flex-col items-center justify-center rounded-xl hover:transform hover:rotate-6">
                         <img src="images/icon/javascript-removebg-preview.png" alt="" class=" h-32 px-14 py-5">
                         <h4 class="text-2xl pb-3 font-medium text-center">Java Script</h4>
                     </div>
                     <!-- card-5 -->
-                    <div class="bg-gray-100 shadow-2xl flex flex-col items-center justify-center rounded-xl">
+                    <div
+                        class="bg-gray-100 shadow-2xl flex flex-col items-center justify-center rounded-xl hover:transform hover:rotate-6">
                         <img src="images/icon/react-removebg-preview.png" alt="" class=" h-32 px-14 py-5">
                         <h4 class="text-2xl pb-3 font-medium text-center">React js</h4>
                     </div>
                     <!-- card-6 -->
-                    <div class="bg-gray-100 shadow-2xl flex flex-col items-center justify-center rounded-xl">
+                    <div
+                        class="bg-gray-100 shadow-2xl flex flex-col items-center justify-center rounded-xl hover:transform hover:rotate-6">
                         <img src="images/icon/vue-js.png" alt="" class=" h-32 px-14 py-5">
                         <h4 class="text-2xl pb-3 font-medium text-center">Vue js</h4>
                     </div>
                     <!-- card-7 -->
-                    <div class="bg-gray-100 shadow-2xl flex flex-col items-center justify-center rounded-xl">
+                    <div
+                        class="bg-gray-100 shadow-2xl flex flex-col items-center justify-center rounded-xl hover:transform hover:rotate-6">
                         <img src="images/icon/github-removebg-preview.png" alt="" class=" h-32 px-14 py-5">
                         <h4 class="text-2xl pb-3 font-medium text-center">github</h4>
                     </div>
                     <!-- card-8 -->
-                    <div class="bg-gray-100 shadow-2xl flex flex-col items-center justify-center rounded-xl">
+                    <div
+                        class="bg-gray-100 shadow-2xl flex flex-col items-center justify-center rounded-xl hover:transform hover:rotate-6">
                         <img src="images/icon/xd.png" alt="" class=" h-32 px-14 py-5">
                         <h4 class="text-2xl pb-3 font-medium text-center">Figma</h4>
                     </div>
@@ -180,11 +193,11 @@
             <h3 class="text-xl text-[#F9004D] py-3 ">Feature</h3>
             <h1 class="text-5xl font-bold  text-[#F9004D]">What I do</h1>
 
-            <div class="mt-10 flex gap-5">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10 ">
                 <!-- card-1 -->
-                <div class=" bg-base-100 hover:text-white rounded-2xl  shadow-2xl p-5 hover:bg-[#F9004D]">
+                <div class="group bg-base-100 hover:text-white rounded-2xl  shadow-2xl p-5 hover:bg-[#F9004D]">
                     <figure>
-                        <img src="images/icon/hamburger.png" alt="Shoes" / class="w-20">
+                        <img src="images/icon/hamburger.png" alt="Shoes" / class="w-20 group-hover:filter group-hover:brightness-0 group-hover:invert">
                     </figure>
                     <div class="pt-3">
                         <h2 class="card-title">Business Stretegy</h2>
@@ -195,9 +208,9 @@
                     </div>
                 </div>
                 <!-- card-2 -->
-                <div class=" bg-base-100 hover:text-white rounded-2xl shadow-2xl p-5 hover:bg-[#F9004D]">
+                <div class="group bg-base-100 hover:text-white rounded-2xl shadow-2xl p-5 hover:bg-[#F9004D]">
                     <figure>
-                        <img src="images/icon/book.png" alt="Shoes" / class="w-20">
+                        <img src="images/icon/book.png" alt="Shoes" / class="w-20 group-hover:filter group-hover:brightness-0 group-hover:invert">
                     </figure>
                     <div class="pt-3">
                         <h2 class="card-title">Business Devlopment</h2>
@@ -208,9 +221,9 @@
                     </div>
                 </div>
                 <!-- card-3 -->
-                <div class=" bg-base-100 hover:text-white rounded-2xl shadow-2xl p-5 hover:bg-[#F9004D]">
+                <div class="group bg-base-100 hover:text-white rounded-2xl shadow-2xl p-5 hover:bg-[#F9004D]">
                     <figure>
-                        <img src="images/icon/smartphone.png" alt="Shoes" / class="w-20">
+                        <img src="images/icon/smartphone.png" alt="Shoes" / class="w-20 group-hover:filter group-hover:brightness-0 group-hover:invert">
                     </figure>
                     <div class="pt-3">
                         <h2 class="card-title">App Development</h2>
